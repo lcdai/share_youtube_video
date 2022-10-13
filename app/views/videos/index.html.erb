@@ -1,0 +1,25 @@
+<% if @videos.any? %>
+  <div class="container">
+    <h1>Latest videos</h1>
+    <div id="player-wrapper"></div>
+    <% @videos.each do |video| %>
+      <% if video %>
+        <div class="col-md-4">
+          <div class="yt_video thumbnail">
+            <%= link_to image_tag("https://img.youtube.com/vi/#{video_info(video).video_id}/mqdefault.jpg", alt: video.title, class: 'img-rounded'), "#{video.link}", target: '_blank' %>
+            <div class="caption">
+              <h5><%= video_info(video).title %></h5>
+              <p><b>Author:</b> <%= video_info(video).author %></p>
+              <p><b>Duration:</b> <%= video_info(video).duration %></p>
+              <p><b>Published at:</b> <%= video_info(video).date %></p>
+              <p>
+                <span class="glyphicon glyphicon glyphicon-thumbs-up"></span> <%= video.likes %>
+                <span class="glyphicon glyphicon glyphicon-thumbs-down"></span> <%= video.dislikes %>
+              </p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+<% end %>

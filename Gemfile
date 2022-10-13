@@ -29,8 +29,9 @@ gem 'spring',        group: :development
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
-gem 'bootstrap-sass', '~> 3.1.1.0'
-gem 'youtube_it', '~> 2.4.0'
+gem 'bootstrap-sass'
+gem 'autoprefixer-rails', '~> 5.2.1.3'
+gem 'video_info'
 
 # Use unicorn as the app server
 # gem 'unicorn'
@@ -39,5 +40,5 @@ gem 'youtube_it', '~> 2.4.0'
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
-gem 'debugger', group: [:development, :test]
-
+# gem 'debugger', group: [:development, :test]
+gem 'rspec-rails'
