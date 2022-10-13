@@ -76,6 +76,7 @@ GEM
     oga (3.4)
       ast
       ruby-ll (~> 2.1)
+    pg (0.21.0)
     rack (1.5.5)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -164,6 +165,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   mysql2 (~> 0.3.13)
+  pg (~> 0.18)
   rails (= 4.1.16)
   rspec-rails
   sass-rails (~> 4.0.3)
