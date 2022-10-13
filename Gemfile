@@ -42,3 +42,4 @@ gem 'video_info'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 gem 'rspec-rails'
+gem 'factory_bot_rails'

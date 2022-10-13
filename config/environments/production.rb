@@ -75,4 +75,6 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  VideoInfo.provider_api_keys = { youtube: 'AIzaSyBUXYbDUzg2HobhuyE9KxIyN7BxfWa5wwg' }
 end

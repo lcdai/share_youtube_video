@@ -13,7 +13,7 @@ class VideosController < ApplicationController
     @video = Video.new(video_params)
       if @video.save
         flash[:success] = 'Video added!'
-        redirect_to root_url
+        redirect_to root_path
       else
         render 'new'
       end
