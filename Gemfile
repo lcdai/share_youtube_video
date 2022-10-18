@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.3.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.8'
@@ -8,6 +9,7 @@ group :development, :test do
 end
 group :production do
   gem 'pg', '~> 0.18'
+  gem 'rails_12factor'
 end
 gem 'bigdecimal', '1.3.5'
 # Use SCSS for stylesheets
