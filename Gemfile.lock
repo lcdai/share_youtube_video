@@ -210,7 +210,7 @@ DEPENDENCIES
   video_info
 
 RUBY VERSION
-   ruby 2.3.4p301
+   ruby 2.7.6p219
 
 BUNDLED WITH
    1.17.3
