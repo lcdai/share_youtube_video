@@ -13,8 +13,13 @@ class UsersController < ApplicationController
       flash[:notice] = "User created."
       redirect_to @user
     else
+      flash.now[:alert] = "'Invalid credentials'"
       render 'new'
     end
+  end
+
+  def show
+    @user = User.find(params[:id])
   end
 
   private
